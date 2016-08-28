@@ -1,7 +1,7 @@
-# Riot.js and Redux example
+# React and MobX example
 
-This is an example of [Riot.js](http://riotjs.com) tag using [Redux](https://github.com/reactjs/redux).
-Produces a Riot tag for a dynamic ASCII word clock:
+This is an example of [React](https://facebook.github.io/react/) tag using [MobX](https://mobxjs.github.io/mobx/).
+Produces a React app for a dynamic ASCII word clock:
 
 ![](./sample.png)
 
@@ -9,16 +9,7 @@ Produces a Riot tag for a dynamic ASCII word clock:
 
 ```bash
 npm install
-webpack -p
+npm start
 ```
 
-Minified tag script is in `dist/meet.js`
-
-## Usage:
-    <script src="./dist/qlock.js" charset="utf-8"></script>
-    ...
-    <qlock></qlock>
-
-### Example:
-
-    <qlock></qlock>
+Open http://localhost:8080 in browser.
