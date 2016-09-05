@@ -1,3 +1,4 @@
 {
-  "extends": "appfolio-base"
+  "parser": "babel-eslint",
+  "extends": "appfolio-react"
 }

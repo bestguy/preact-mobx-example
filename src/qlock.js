@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import QlockStore from './qlock_store.js';
 import styles from './qlock.css';
 import { observer } from 'mobx-react';
 
@@ -6,8 +7,10 @@ const On = ({ children, when }) => <span className={when ? styles.on : ''}>{chil
 
 @observer
 class Qlock extends Component {
+  time = new QlockStore();
+
   render() {
-    const time = this.props.time;
+    const time = this.time;
     return (<pre className={styles.qlock}>
 <span className={styles.on}>IT</span>L<span className={styles.on}>IS</span>BFAMPM<br />
 <On when={time.quarter}>A</On>C<On when={time.quarter}>QUARTER</On>DC<br />
@@ -20,7 +23,7 @@ class Qlock extends Component {
 <On when={time.h == 7}>SEVEN</On><On when={time.h == 0}>TWELVE</On><br />
 <On when={time.h == 10}>TEN</On>SE<On when={time.oclock}>OCLOCK</On><br />
 <On when={time.oneMinute}>.</On>  <On when={time.twoMinutes}>.</On>  <On when={time.threeMinutes}>.</On>  <On when={time.fourMinutes}>.</On>
-</pre>);Sounds
+</pre>);
   }
 }
 

@@ -50,6 +50,12 @@ module.exports = {
       minimize: true,
       debug: false
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      'react': 'preact-compat',
+      'react-dom': 'preact-compat',
+    }
+  }
 };
 
