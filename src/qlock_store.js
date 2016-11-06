@@ -11,7 +11,7 @@ export default class Qlock {
     return this.now.getMinutes();
   }
   @computed get h() {
-    return (this.now.getHours() + (this.m >= 40 ? 1 : 0)) % 12;
+    return (this.now.getHours() + (this.m >= 35 ? 1 : 0)) % 12;
   }
 
   @computed get past() {
@@ -39,7 +39,7 @@ export default class Qlock {
   }
 
   @computed get fourMinutes() {
-    return this.m % 5 >= 4; 
+    return this.m % 5 >= 4;
   }
 
   @computed get fiveMinutes() {
