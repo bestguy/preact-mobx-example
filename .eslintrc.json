@@ -1,4 +1,9 @@
 {
   "parser": "babel-eslint",
-  "extends": "appfolio-react"
+  "extends": "airbnb",
+  "rules": {
+    "comma-dangle": 0,
+    "import/extensions": 0,
+    "react/jsx-filename-extension": 0
+  }
 }

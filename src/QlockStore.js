@@ -4,7 +4,9 @@ const between = (t, min, max) => t >= min && t < max;
 
 export default class Qlock {
   constructor() {
-    setInterval(() => this.now = new Date(), 3000);
+    setInterval(() => {
+      this.now = new Date();
+    }, 3000);
   }
 
   @observable now = new Date();

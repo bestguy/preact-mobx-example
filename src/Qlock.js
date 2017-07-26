@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import { observer } from 'mobx-react';
 import QlockStore from './QlockStore.js';
 import styles from './Qlock.css';
-import { observer } from 'mobx-react';
 
 const On = ({ children, when }) => <span className={when ? styles.on : ''}>{children}</span>;
+On.defaultProps = {
+  when: false
+};
+On.propTypes = {
+  children: React.PropTypes.node.isRequired,
+  when: React.PropTypes.bool
+};
 
 @observer
 class Qlock extends Component {
