@@ -1,9 +1,11 @@
-# React and MobX example
+# Preact, MobX, and web-component example
 
-This is an example of [React](https://facebook.github.io/react/) tag using [MobX](https://mobxjs.github.io/mobx/).
-Produces a React app for a dynamic ASCII word clock:
+This is an example of [Preact](https://preactjs.com) using [MobX](https://mobxjs.github.io/mobx/) and web-components.
+Produces a web-component for a dynamic ASCII word clock:
 
 ![](./sample.png)
+
+[Demo](https://bestguy.github.io/react-mobx-example)
 
 ## Build
 
