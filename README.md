@@ -5,7 +5,7 @@ Produces a web-component for a dynamic ASCII word clock:
 
 ![](./sample.png)
 
-[Demo](https://bestguy.github.io/react-mobx-example)
+[Demo](https://bestguy.github.io/preact-mobx-example)
 
 ## Build
 
