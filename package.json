@@ -16,6 +16,14 @@
   "author": "bestguy",
   "license": "MIT",
   "private": true,
+  "dependencies": {
+    "mobx": "^3.2.1",
+    "mobx-react": "^4.2.2",
+    "preact": "^8.2.1",
+    "preact-compat": "^3.16.0",
+    "preact-custom-element": "^2.0.0",
+    "webcomponents-lite": "^0.6.0"
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.10.4",
@@ -27,24 +35,20 @@
     "babel-preset-stage-1": "^6.13.0",
     "babel-preset-stage-2": "^6.11.0",
     "css-loader": "^0.28.4",
-    "eslint-config-appfolio-react": "^0.3.2",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
     "express": "^4.14.0",
     "html-loader": "^0.4.0",
-    "mobx": "^3.2.1",
-    "mobx-react": "^4.2.2",
     "mocha": "^2.5.3",
     "postcss": "^6.0.8",
     "postcss-loader": "^2.0.6",
-    "preact": "^8.2.1",
-    "preact-compat": "^3.16.0",
-    "preact-custom-element": "^2.0.0",
     "style-loader": "^0.18.2",
-    "webcomponents-lite": "^0.6.0",
     "webpack": "^2.1.0-beta.21",
     "webpack-dashboard": "^0.1.8",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.12.1"
-  },
-  "dependencies": {}
+  }
 }
