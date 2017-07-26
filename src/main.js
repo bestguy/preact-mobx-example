@@ -1,6 +1,6 @@
 import 'webcomponents-lite';
-import Qlock from './qlock.js';
 import registerCustomElement from 'preact-custom-element';
+import Qlock from './Qlock.js';
 
 import './main.css';
 

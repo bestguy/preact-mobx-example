@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import QlockStore from './qlock_store.js';
-import styles from './qlock.css';
+import QlockStore from './QlockStore.js';
+import styles from './Qlock.css';
 import { observer } from 'mobx-react';
 
 const On = ({ children, when }) => <span className={when ? styles.on : ''}>{children}</span>;

@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 import assert from 'assert';
-import QlockStore from '../src/qlock_store.js';
+import QlockStore from '../src/QlockStore.js';
 
 describe('QlockStore', () => {
   const store = new QlockStore();
