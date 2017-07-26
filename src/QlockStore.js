@@ -1,5 +1,7 @@
 import { computed, observable } from 'mobx';
 
+const between = (t, min, max) => t >= min && t < max;
+
 export default class Qlock {
   constructor() {
     setInterval(() => this.now = new Date(), 3000);
@@ -15,7 +17,7 @@ export default class Qlock {
   }
 
   @computed get past() {
-    return this.m >= 5 && this.m < 35;
+    return between(this.m, 5, 35);
   }
 
   @computed get to() {
@@ -23,7 +25,7 @@ export default class Qlock {
   }
 
   @computed get oclock() {
-    return this.m >= 0 && this.m < 5;
+    return between(this.m, 0, 5);
   }
 
   @computed get oneMinute() {
@@ -43,28 +45,28 @@ export default class Qlock {
   }
 
   @computed get fiveMinutes() {
-    return (this.m >= 5 && this.m < 10) ||
+    return between(this.m, 5, 10) ||
            (this.m >= 55) ||
-           (this.m >= 25 && this.m < 30) ||
-           (this.m >= 35 && this.m < 40);
+           between(this.m, 25, 30) ||
+           between(this.m, 35, 40);
   }
 
   @computed get tenMinutes() {
-    return (this.m >= 10 && this.m < 15) ||
-           (this.m >= 50 && this.m < 55);
+    return between(this.m, 10, 15) ||
+           between(this.m, 50, 55);
   }
 
   @computed get quarter() {
-    return (this.m >= 15 && this.m < 20) ||
-           (this.m >= 45 && this.m < 50);
+    return between(this.m, 15, 20) ||
+           between(this.m, 45, 50);
   }
 
   @computed get twentyMinutes() {
-    return (this.m >= 20 && this.m < 30) ||
-           (this.m >= 35 && this.m < 45);
+    return between(this.m, 20, 30) ||
+           between(this.m, 35, 45);
   }
 
   @computed get half() {
-    return (this.m >= 30 && this.m < 35);
+    return between(this.m, 30, 35);
   }
 }
