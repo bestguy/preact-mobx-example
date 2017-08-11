@@ -20,7 +20,7 @@
     "mobx": "^3.2.1",
     "mobx-react": "^4.2.2",
     "preact": "^8.2.1",
-    "preact-compat": "^3.16.0",
+    "preact-compat": "^3.17.0",
     "preact-custom-element": "^2.0.0",
     "webcomponents-lite": "^0.6.0"
   },
@@ -46,8 +46,7 @@
     "postcss": "^6.0.8",
     "postcss-loader": "^2.0.6",
     "style-loader": "^0.18.2",
-    "webpack": "^2.1.0-beta.21",
-    "webpack-dashboard": "^0.1.8",
+    "webpack": "^2.7.0",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.12.1"
   }

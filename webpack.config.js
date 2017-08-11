@@ -1,10 +1,8 @@
-'use strict';
-
-const autoprefixer = require('autoprefixer');
 const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
+  devtool: 'source-map',
   entry: [
     path.resolve(__dirname, './src/main.js')
   ],
@@ -22,7 +20,7 @@ module.exports = {
         query: {
           presets: ['es2015', 'stage-1', 'stage-2'],
           plugins: [['transform-react-jsx'],
-                    'transform-decorators-legacy']
+            'transform-decorators-legacy']
         }
       },
       {
@@ -36,7 +34,8 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
         warnings: false
-      }
+      },
+      sourceMap: true
     }),
     new webpack.DefinePlugin({
       'process.env': {
@@ -50,7 +49,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      'react': 'preact-compat',
+      react: 'preact-compat',
       'react-dom': 'preact-compat',
     }
   }
